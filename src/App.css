@@ -20,9 +20,21 @@
 .wrapper {
     position: absolute;
     display: flex;
-  }
+    animation: animateBubble 30s linear infinite;
+    z-index: 1;
+}
+.wrapper:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+    
+}
 
-.d-flex {
+.inner:hover .wrapper {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+/* .d-flex {
     display: flex;
     animation: animateBubble 30000ms linear infinite backwards;
 }
@@ -30,14 +42,9 @@
 .d-flex:hover {
     animation-play-state: paused;
     cursor: pointer;
-}
+} */
 
 @keyframes animateBubble {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(var(--shift)); }
 }

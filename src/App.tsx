@@ -15,13 +15,13 @@ function App() {
   const appName = 'Software Engineer';
 
   let data: CardMember[] = [
-    { id: 1, cardName: 'React' },
-    { id: 2, cardName: 'Next.js' },
-    { id: 3, cardName: 'TypeScript' },
-    { id: 4, cardName: 'Tailwind CSS' },
-    { id: 5, cardName: 'Node.js' },
-    { id: 6, cardName: 'Express.js' },
-    { id: 7, cardName: 'C#' },
+    { id: 1, cardName: 'React',iconName: 'react' },
+    { id: 2, cardName: 'Next.js', iconName: 'nextjs' },
+    { id: 3, cardName: 'TypeScript',iconName: 'typescript' },
+    { id: 4, cardName: 'Tailwind CSS', iconName: 'tailwindcss' },
+    { id: 5, cardName: 'Node.js', iconName: 'nodejs' },
+    { id: 6, cardName: 'Express.js', iconName: 'expressjs' },
+    { id: 7, cardName: 'C#', iconName: 'C#' },
   ]
 
 
