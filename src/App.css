@@ -1,0 +1,43 @@
+.card {
+    width: 200px !important;
+    height: 200px;
+    background: transparent;
+    border-radius: 15px;
+    margin: 12px;
+    padding: 12px;
+}
+.card:last-of-type{
+    padding-left: 0;
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+}
+
+.wrapper {
+    position: absolute;
+    display: flex;
+  }
+
+.d-flex {
+    display: flex;
+    animation: animateBubble 30000ms linear infinite backwards;
+}
+
+.d-flex:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+@keyframes animateBubble {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
